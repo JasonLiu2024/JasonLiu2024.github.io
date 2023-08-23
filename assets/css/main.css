@@ -3457,16 +3457,17 @@ input, select, textarea {
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
+		min-height: 64vh;
 		position: relative;
 		text-align: center;
-		z-index: 21;
+		z-index: 21;		
+		height: 96px;
 	}
 
 		#banner:before {
 			content: '';
 			display: inline-block;
-			height: 100vh;
+			height: 64vh; /* should be SAME as the 'height' in the above {}*/
 			vertical-align: middle;
 			width: 1%;
 		}
