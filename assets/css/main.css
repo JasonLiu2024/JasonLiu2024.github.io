@@ -3457,7 +3457,7 @@ input, select, textarea {
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 64vh;
+		min-height: 76vh;
 		position: relative;
 		text-align: center;
 		z-index: 21;		
@@ -3467,7 +3467,7 @@ input, select, textarea {
 		#banner:before {
 			content: '';
 			display: inline-block;
-			height: 64vh; /* should be SAME as the 'height' in the above {}*/
+			height: 76vh; /* should be SAME as the 'height' in the above {}*/
 			vertical-align: middle;
 			width: 1%;
 		}
