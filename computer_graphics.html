@@ -29,12 +29,11 @@
 							<li><a href="machine_learning.html">Machine Learning</a></li>
 							<li><a href="computer_graphics.html">Computer Graphics</a></li>
 							<li><a href="art.html">Art & Design</a></li>
-							<li><a href="experience.html">Art & Design</a></li>
+							<li><a href="experience.html">Experiences</a></li>
 						</li>
 					</ul>
 				</nav>
 			</header>
-
 
 			<!-- Main -->
 				<div id="main" class="wrapper style1">
@@ -46,7 +45,7 @@
 						<div class="row gtr-150">
 							<!-- </div> -->
 							<div class="col-6 col-12-medium">
-								<!-- Content -->
+<!-- ARCHAEOLOGY -->
 									<section id="content">
 										<!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
 										<h3>Geometry Processing for Archaeology Discovery</h3>
@@ -61,11 +60,9 @@
 										<p>1. I implemented different geometry processing algorithms, comparing their effectiveness in analyzing our 3D and 2D data.
 										</br>I did so for the following algorithms:
 										</p>
-										<ul>
 											<li>CrestCODE</li>
 											<li>Mejering</li>
 											<li>2D image ridges</li>
-										</ul>
                                         </br>2. I optimized and simplified the structure of my code, creating a simple interface
                                         </br>3. I participated in weekly lab meetings with my advisors, where we discuss next steps and evaluate our current progress. 
 										<ul class="actions">
@@ -75,20 +72,16 @@
 									</section>
 							</div>
 							<div class="col-6 col-12-medium">
-								<!-- Content -->
+<!-- INSECT WING -->
 									<section id="content">
 										<!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
-										<h3>Rendering the Venation of Insect Wings using Computer Vision techniques</h3>
-										<p>I implemented the U-Net algorithm to make a noisy MRI image into a sharper
-										</br>My dataset is a sharp MRI image. I created input data by applying Fourier transform, using the original sharp image as its label
-										</br>I applied data augmentation to this dataset. My methods are:
-										<ul>
-											<li>Perspective</li>
-											<li>Rotate</li>
-											<li>Flip</li>
-											<li>Crop</li>
-										</ul>
-										</br>I evaluated the result (reconstructed image) by taking its Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index Measure (SSIM) against the label image
+										<h3>Rendering the Venation of Insect Wings in NURBS models</h3>
+										<p>Inspired by insect-wing-venation-patterns, I reached out to authors Chris and Jordan. They taught me how to use their tool; that helped me developed the following pipeline: 
+										</br><b>1</b> I thresholded the image to acquire a bitmap of features
+										</br><b>2</b> Next, I skeletonize the bitmap to get pixel line representation of the web of venations
+										</br><b>3</b> Then, I converted the pixel lines into a graph
+										</br><b>4</b> I solve for the minimum cycle basis of this graph, obtaining each closed cell on the wings
+										</br><b>5</b> I export the vector representation of this file, before deforming it in CAD software to produce a smooth but detailed NURBS model
 										</p>
 										<ul class="actions">
 											<li><a href="machine_learning.html" class="button">Code</a></li>
