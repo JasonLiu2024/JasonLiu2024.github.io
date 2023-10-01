@@ -3,6 +3,8 @@
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	For font problem, search "/* Basic */" in main.css!
 -->
 <html>
 	<head>
@@ -12,103 +14,96 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-    <style>
+	<style>
 		body {
 		  font-family: 'Courier New', monospace;
 		}
 	</style>
 	<body class="is-preload">
 		<div id="page-wrapper">
-
-			<!-- Header -->
-			<header id="header">
-				<h1 id="logo"><a href="index.html">Home</a></h1>
-				<nav id="nav">
-					<ul>
-						<li>
-							<li><a href="machine_learning.html">Machine Learning</a></li>
-							<li><a href="computer_graphics.html">Computer Graphics</a></li>
-							<li><a href="art.html">Art & Design</a></li>
-							<li><a href="experience.html">Experiences</a></li>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
+			<top-bar></top-bar>
 			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<h2>Computer Graphics</h2>
-							<p>Archaeology, Biology, and Computer Vision</p>
-						</header>
-						<div class="row gtr-150">
-							<!-- </div> -->
-							<div class="col-6 col-12-medium">
-<!-- ARCHAEOLOGY -->
-									<section id="content">
-										<!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
-										<h3>Geometry Processing for Archaeology Discovery</h3>
-										<p>My team and I extracted geometric features from LiDAR point clouds and Groud-Penetrating-Radar (GPR) images
-										</br>Our goal is to discover and evaluate archaeological features on the surface that aren't obvious to the human eye 
-										</br>Very High-Resolution (VHR) LiDAR scan from a drone extracts captures the surface of a dig site in detail
-										</br>GPR scan from a trolley detects architectural remains underground
-										</br>By analyzing mesh reconstructed from LiDAR point clouds, we drew 3D ridge lines on areas of high curvature.
-										</br>Similarly, we extracted 2D ridge lines from the GPR image.
-                                        </br>Correspondence between 3D and 2D ridge lines reveal architectural patterns and structural patterns not highlighted by conventional methods
-										</p>
-										<p>1. I implemented different geometry processing algorithms, comparing their effectiveness in analyzing our 3D and 2D data.
-										</br>I did so for the following algorithms:
-										</p>
-											<li>CrestCODE</li>
-											<li>Mejering</li>
-											<li>2D image ridges</li>
-                                        </br>2. I optimized and simplified the structure of my code, creating a simple interface
-                                        </br>3. I participated in weekly lab meetings with my advisors, where we discuss next steps and evaluate our current progress. 
-										<ul class="actions">
-											<li><a href="machine_learning.html" class="button">Code</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=ypagRW-OVRA" class="button">Presentation Video</a></li>
-										</ul>	
-									</section>
-							</div>
-							<div class="col-6 col-12-medium">
-<!-- INSECT WING -->
-									<section id="content">
-										<!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
-										<h3>Rendering the Venation of Insect Wings in NURBS models</h3>
-										<p>Inspired by insect-wing-venation-patterns, I reached out to authors Chris and Jordan. They taught me how to use their tool; that helped me developed the following pipeline: 
-										</br><b>1</b> I thresholded the image to acquire a bitmap of features
-										</br><b>2</b> Next, I skeletonize the bitmap to get pixel line representation of the web of venations
-										</br><b>3</b> Then, I converted the pixel lines into a graph
-										</br><b>4</b> I solve for the minimum cycle basis of this graph, obtaining each closed cell on the wings
-										</br><b>5</b> I export the vector representation of this file, before deforming it in CAD software to produce a smooth but detailed NURBS model
-										</p>
-										<ul class="actions">
-											<li><a href="machine_learning.html" class="button">Code</a></li>
-										</ul>	
-									</section>
-							</div>
-						</div>
-					</div>
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>Computer Graphics (CG)</h2>
+						<p>Geometry Analysis and Computer Vision (Python and C++)</p>
+					</header>
+					<!-- Content -->
+						<section id="content"> <!-- search "/* Container */" in main.css -->
+							<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+							<h2>Geometry Processing and Analysis for Archaeology</h2>
+							<p><b>Research Problem</b>: Quickly identifying archaeological features in the form of curvelinear structures 
+							</p>
+							<p><b>Research Task</b>: (1) Develop an efficient and accurate pipeline archaeology researchers, who are unfamiliar with coding, can easily use 
+								(2) Evaluate the accuracy of this tool using Ground-Penetrating-Radar (GPR) data, which exposes similar curvelinear structures underground
+							</p>
+							<p><b>Actions</b>: (3000+ lines of code) 
+							<ol> <!-- change padding: "/* List */" in main.css-->
+								<li>Created mesh from very-high-resolution LiDAR point cloud data from sites in Uzbekistan (Screened Poisson Reconstruction)</li>
+								<li>Extracted curvelinear features from this mesh using the CrestCODE algorithm</li>
+								<li>Extracted curvelinear features from GPR image using the Ridge-Detection algorithm</li>
+								<li>Deformed the mesh as well as the curvelinear features to fit the distortion of the GPR image 
+									(due to reprojecting to a 2D plane) using the Smooth-Excess-Area algorithm
+								<li>Developed a metric to compare the curvelinear features from the deformed mesh and 
+									the GPR image</li>
+								<li>Calculated summary statistics to identify the accuracy of our method</li>
+								<li>Presented our results in the 2022 Undergraduate Research Symposium</li>
+								<li>Our project was featured in the WashU's Technical Exchange Planning Meeting with the National Geospatial-Intelligence Agency (NGA) </li>
+								<li>Discussed with archaeologists to confirm and update expectations for research outcome</li>
+								<li>Produced well-documented, modularized code, which I circulated with new PhD students joining this project</li>
+								<li>Reported findings in weekly project meetings</li>
+								<li>Created an easy-to-use interface for all this automated pipeline</li>
+							</ol>
+							</p>
+								<p><b>Results</b>: 
+									<ol>
+										<li>Developed an efficient, user-friendly pipeline to automatically idenfity archaeological features in large scale</li>
+										<li>Spearheaded and laid foundation for the collaboration between the two labs involved in this project</li>
+										<li>Drafting: Reported our findings in a publication
+									</ol>
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/JasonLiu2024/Automatic-Feature-Extraction-from-LiDAR-Point-Cloud-Data" class="button">Code</a></li>
+							</ul>
+						</section>
+						<section id="content"> <!-- search "/* Container */" in main.css -->
+							<h2>Extracting Insect Wings Venations and their Closed Regions from Images</h2>
+							<p><b>Research Problem</b>: (1) Automatically identify the venation of insect wings and mutually-exclusive regions they enclose 
+								(2) record the extracted curvelinear features in the form of clean SVG images
+							</p>
+							<p><b>Research Task</b>: (1) Develop a pipeline to extract curvelinear features from images of insect wings 
+								(2) Develop a method to identify the small enclosed regions in the wings
+								(3) Convert the extracted features into SVG format
+							</p>
+							<p><b>Actions</b>: (1500+ lines of code)
+							<ol> <!-- change padding: "/* List */" in main.css-->
+								<li>Studied Seth Donohogue and Christopher Rycroft's work on this topic</li>
+								<li>Reached out to them to better understand their methods (segmentation and optimization) and strategies</li>
+								<li>Researched similar methods that extracts curvelinear features from 2D images</li>
+								<li>Implemented a combination of thresholding, denoising, and skeletonization to quickly extract curvelinear structures</li>
+								<li>Stored the extracted features in the forms of nodes and edges in an undirected graph</li>
+								<li>Applied the minimum-cycle-basis algorithm to identify mutually-exclusive cycles in this graph, 
+									which corresponds to small enclosed areas on the wings of insects like dragonfly or grasshopper
+								</li>
+								<li>Implementated a workflow to convert the extracted features to SVG at high and low resolutions</li>
+								<li>Developed a program to create 3D models from the wings that area ready for 3D-printing</li>
+							</ol>
+							</p>
+								<p><b>Results</b>: 
+									<ol>
+										<li>Developed an automatic and efficient pipeline to identify curvelinear features in insect wings</li>
+										<li>Developed a follow-up workflow to extract the small enclosed areas from a network of those features</li>
+										<li>Created an easy, user-friendly interface for artists and researchers who aren't familiar with coding</li>
+									</ol>
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/JasonLiu2024/Extract-Line-Like-Structures-from-Images" class="button">Code</a></li>
+							</ul>
+						</section>
 				</div>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
-
+			</div>
 		</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -118,6 +113,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="custom_components.js"></script>
 	</body>
 </html>

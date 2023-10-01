@@ -17,7 +17,7 @@ topbarTemplate.innerHTML = `
 					<li><a href="machine_learning.html">Machine Learning</a></li>
 					<li><a href="computer_graphics.html">Computer Graphics</a></li>
 					<li><a href="art.html">Art & Design</a></li>
-					<li><a href="experience.html">Experiences</a></li>
+					<li><a href="experience.html">Professional Experience</a></li>
 				</li>
 			</ul>
 		</nav>

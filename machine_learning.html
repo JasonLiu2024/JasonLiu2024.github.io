@@ -27,7 +27,7 @@
 				<div class="container">
 					<header class="major">
 						<h2>Machine Learning (ML)</h2>
-						<p>Meta-Learning and Computer Vision</p>
+						<p>Meta-Learning and Computer Vision (PyTorch with Python)</p>
 					</header>
 					<!-- Content -->
 						<section id="content"> <!-- search "/* Container */" in main.css -->
@@ -38,7 +38,7 @@
 							</p>
 							<p><b>Research Task</b>: (1) Implement non-parametric meta-learning algorithms (2) Train neural networks on our dataset (3) Evaluate their single-task and multi-task performance
 							</p>
-							<p><b>Actions</b>: 
+							<p><b>Actions</b>: (2000+ lines of code)
 							<ol> <!-- change padding: "/* List */" in main.css-->
 								<li>Implemented non-parametric meta-learning algorithms</li>
 									<ul>
@@ -87,7 +87,7 @@
 							<p><b>Research Task</b>: (1) Recreate results from the TAML paper 
 								(2) Adapt Bayesian TAML to medical projects, where data is often scarece and unevenly distributed
 							</p>
-							<p><b>Actions</b>: 
+							<p><b>Actions</b>: (2000+ lines of code) 
 							<ol> <!-- change padding: "/* List */" in main.css-->
 								<li>Studied the TAML paper to understand the proposed model's structure and capabilities</li>
 								<li>Researched successful implementations of Model-Agnostic Meta-Learning algorithm (MAML), upon which TAML is built
@@ -102,6 +102,30 @@
 							</p>
 							<ul class="actions">
 								<li><a href="https://github.com/JasonLiu2024/Meta-Learning/tree/main/TAML" class="button">Code</a></li>
+							</ul>
+						</section>
+						<section id="content"> <!-- search "/* Container */" in main.css -->
+							<h2>Image Reconstruction with U-Net</h2>
+							<p><b>Research Problem</b>: Implementing a U-Net model to sharpen blurry MRI images, using a synthetic dataset
+							</p>
+							<p><b>Research Task</b>: (1) Create a synthetic dataset from the sharp MRI images we are given 
+								(2) Train a U-Net model to convert a blurry MRI image to its sharpened version
+							</p>
+							<p><b>Actions</b>: (1000+ lines of code) 
+							<ol> <!-- change padding: "/* List */" in main.css-->
+								<li>Created synthetic data by applying Inverse Fourier Transform and Gaussian Noise</li>
+								<li>Augmented the dataset by randomly applying mirroring, rotation, translation, and perspective to the images
+								<li>Trained an evaluated a U-Net model</li>
+								<li>Evaluated the U-Net model using the Structural Similarity Index Measure (SSIM) and Peak Signal-to-Noise Ratio (PSNR) metrics</li>
+							</ol>
+							</p>
+								<p><b>Results</b>: 
+									<ol>
+										<li>Created an easy-to-use interface for TAML in Jupyter notebook</li>
+									</ol>
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/JasonLiu2024/MRI_project" class="button">Code</a></li>
 							</ul>
 						</section>
 				</div>
