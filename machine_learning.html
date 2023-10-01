@@ -3,6 +3,8 @@
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	For font problem, search "/* Basic */" in main.css!
 -->
 <html>
 	<head>
@@ -19,131 +21,92 @@
 	</style>
 	<body class="is-preload">
 		<div id="page-wrapper">
-
-			<!-- Header -->
-			<header id="header">
-				<h1 id="logo"><a href="index.html">Home</a></h1>
-				<nav id="nav">
-					<ul>
-						<li>
-							<li><a href="machine_learning.html">Machine Learning</a></li>
-							<li><a href="computer_graphics.html">Computer Graphics</a></li>
-							<li><a href="art.html">Art & Design</a></li>
-							<li><a href="experience.html">Experiences</a></li>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
-
+			<top-bar></top-bar>
 			<!-- Main -->
-				<div id="main" class="wrapper style1">
-					<div class="container">
-						<header class="major">
-							<h2>Machine Learning</h2>
-							<p>Meta-learning, Multi-task learning, and Image Processing</p>
-						</header>
-						<div class="row gtr-150">
-							<!-- <div class="col-4 col-12-medium"> -->
-
-								<!-- Sidebar -->
-									<!-- <section id="sidebar">
-										<section>
-											<h3>Meta Learning</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button">Learn More</a></li>
-												</ul>
-											</footer>
-										</section>
-										<hr />
-										<section>
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet Lorem Tempus</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button">Learn More</a></li>
-												</ul>
-											</footer>
-										</section>
-									</section> -->
-
-							<!-- </div> -->
-							<div class="col-6 col-12-medium">
-								<!-- Content -->
-									<section id="content">
-										<!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
-										<h3>Meta-learning and multi-task learning for Physics Discovery</h3>
-										<p>My team and I used Meta-learning and multi-task learning to empower research on the Whispering Gallery Mode phenomenon
-										</br>Our goal is to use Deep Neural Networks to extract the relationship between a the behavior of a laser beam and factors like temperature and pressure. 
-										</br>The spectrum of a laser beam records its behavior through different medium.
-										</br>Physics theory indicate that temperature and perssure impact that behavior.
-										</br>However, it's difficult to discern such impact from the spectrum directly, because it has lots of noise.
-										</br>More over, Whispering-Gallery-Mode experiments are expensive to conduct, and it's difficult to keep conditions like temperature stable.
-										</p>
-										<ul>
-											<li>The input is a 10,000-long spectrum from a laser beam</li>
-											<li>The outputs are numbers representing factors like temperature, pressure, and the intensity of that laser beam</li>
-										</ul>	
-										<p>I implemented different machine learning algorithms, trained them, and evaluated their performance by comparing results.
-										</br>I did so for the following algorithms:
-										</p>
-										<ul>
-											<li>Deep Neural Network, to serve as a baseline</li>
-											<li>Siamese Algorithm</li>
-											<li>Triplet Algorithm</li>
-											<li>Mult-task training scheme 1: train on datasets sequentially</li>
-											<li>Mult-task training scheme 2: train on a super-dataset inter-woven from other datasets in order</li>
-										</ul>
-										<ul class="actions">
-											<li><a href="machine_learning.html" class="button">Code</a></li>
-										</ul>	
-									</section>
-							</div>
-							<div class="col-6 col-12-medium">
-								<!-- Content -->
-									<section id="content">
-										<!-- <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a> -->
-										<h3>MRI Image Reconstruction using the U-Net Algorithm</h3>
-										<p>I implemented the U-Net algorithm to make a noisy MRI image into a sharper
-										</br>My dataset is a sharp MRI image. I created input data by applying Fourier transform, using the original sharp image as its label
-										</br>I applied data augmentation to this dataset. My methods are:
-										<ul>
-											<li>Perspective</li>
-											<li>Rotate</li>
-											<li>Flip</li>
-											<li>Crop</li>
-										</ul>
-										</br>I evaluated the result (reconstructed image) by taking its Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index Measure (SSIM) against the label image
-										</p>
-										<ul class="actions">
-											<li><a href="machine_learning.html" class="button">Code</a></li>
-										</ul>	
-									</section>
-							</div>
-						</div>
-					</div>
+			<div id="main" class="wrapper style1">
+				<div class="container">
+					<header class="major">
+						<h2>Machine Learning (ML)</h2>
+						<p>Meta-Learning and Computer Vision</p>
+					</header>
+					<!-- Content -->
+						<section id="content"> <!-- search "/* Container */" in main.css -->
+							<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+							<h2>Whispering Gallery Mode (WGM) study</h2>
+							<p><b>Research Problem</b>: predicting the value of environmental factors (temperature and pressure) 
+								from spectrum of light rays. In Physics, changing these environmental factors cause the crest of the spectrum to shift by varying amounts. 
+							</p>
+							<p><b>Research Task</b>: (1) Implement non-parametric meta-learning algorithms (2) Train neural networks on our dataset (3) Evaluate their single-task and multi-task performance
+							</p>
+							<p><b>Actions</b>: 
+							<ol> <!-- change padding: "/* List */" in main.css-->
+								<li>Implemented non-parametric meta-learning algorithms</li>
+									<ul>
+										<li>Deep Neural Network (a baseline)</li>
+										<li>Siamese Network algorithm</li>
+										<li>Triplet Network algorithm</li>
+										<li>Triplet Network algorithm & Temporal Convolutional Network (TCN)</li>
+									</ul>
+								<li>Implemented k-fold cross-validation to tune the hyperparameters of each model</li>
+								<li>Trained and tested models on a Linux server, using tmux, a utility</li>
+								<li>Experimented their performance on multi-task scenario in two ways:
+									<ul>
+										<li>Meta-learning: Training on support dataset, then query dataset</li>
+										<li>Multi-task learning: Training on a super-dataset with examples from both datasets</li>
+									</ul>
+								<li>Reported results to and discussed with my supervisor weekly</li>
+								<li>Discussed with physicists to confirm and update expectations for research outcome</li>
+								<li>Produced well-documented, modularized code, which I circulated with resident researchers who find them helpful on their projects</li>
+								<li>Reported findings in lab meetings; received feedback and discussed possible applications of the algorithms on other projects</li>
+								<li>Created an easy-to-use interface for all models in Jupyter notebook</li>
+							</ol>
+							</p>
+								<p><b>Results</b>: 
+									<ol>
+										<li>Reduced the mean-square-error loss from 0.016 to 0.000081</li>
+										<li>Identified the limitation of algorithms used</li>
+											<ul>
+												<li>Compared to the baseline, increasingly complex non-parametric algorithms behave
+													perform significantly better. 
+												<li>In particular, hyperparameter settings that work well for 
+													one dataset also works well on others</li>
+												<li>However, the amount of improvement from pre-training on supporting dataset diminishes with 
+													greater model complexity</li>
+												<li>Training on mixed 'super-dataset' yeilds result similar to the baseline but is much worse than the single-task performance</li>
+											</ul>
+									</ol>
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/JasonLiu2024/Meta-Learning" class="button">Code</a></li>
+							</ul>
+						</section>
+						<section id="content"> <!-- search "/* Container */" in main.css -->
+							<h2>In Progress: Implementing Bayesian Task-Adaptive Meta-Learning algorithm</h2>
+							<p><b>Research Problem</b>: Implementing a PyTorch version of the Bayesian Task-Adaptive Meta-Learning (Bayesian TAML) algorithm, originally written in TensorFlow
+							</p>
+							<p><b>Research Task</b>: (1) Recreate results from the TAML paper 
+								(2) Adapt Bayesian TAML to medical projects, where data is often scarece and unevenly distributed
+							</p>
+							<p><b>Actions</b>: 
+							<ol> <!-- change padding: "/* List */" in main.css-->
+								<li>Studied the TAML paper to understand the proposed model's structure and capabilities</li>
+								<li>Researched successful implementations of Model-Agnostic Meta-Learning algorithm (MAML), upon which TAML is built
+								<li>Created a simple, modular implementation of TAML</li>
+								<li>Ongoing: verify the results from 3 against that of the original implementation</li>
+							</ol>
+							</p>
+								<p><b>Results</b>: 
+									<ol>
+										<li>Created an easy-to-use interface for TAML in Jupyter notebook</li>
+									</ol>
+							</p>
+							<ul class="actions">
+								<li><a href="https://github.com/JasonLiu2024/Meta-Learning/tree/main/TAML" class="button">Code</a></li>
+							</ul>
+						</section>
 				</div>
-
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
-
+			</div>
 		</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -153,6 +116,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="custom_components.js"></script>
 	</body>
 </html>
