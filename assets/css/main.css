@@ -2831,7 +2831,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		background-color: transparent;
-		border-radius: 4px;
+		border-radius: 10px;
 		border: 0;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
 		color: #ffffff !important;
@@ -2840,7 +2840,7 @@ input, select, textarea {
 		font-weight: 300;
 		height: 3em;
 		line-height: 3em;
-		padding: 0 2.25em;
+		padding: 0 1em;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
@@ -3105,7 +3105,7 @@ input, select, textarea {
 
 		.spotlight.top .content, .spotlight.bottom .content {
 			left: 0;
-			padding: 5.1em 0 3.1em 0;
+			padding: 1em 0 4em 0;
 			width: 100%;
 		}
 
@@ -3121,9 +3121,9 @@ input, select, textarea {
 
 		.spotlight.left .content, .spotlight.right .content {
 			height: 101%;
-			padding: 6em 3em;
+			padding: 1em 1em;
 			top: 0;
-			width: 28em;
+			width: 24em;
 		}
 
 		.spotlight.left .content {
@@ -3454,17 +3454,17 @@ input, select, textarea {
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
+		min-height: 80vh;
 		position: relative;
 		text-align: center;
 		z-index: 21;		
-		height: 90px;
+		height: 80px;
 	}
 
 		#banner:before {
 			content: '';
 			display: inline-block;
-			height: 76vh; /* should be SAME as the 'height' in the above {}*/
+			height: 80vh; /* should be SAME as the 'height' in the above {}*/
 			vertical-align: middle;
 			width: 1%;
 		}
@@ -3487,9 +3487,9 @@ input, select, textarea {
 			display: inline-block;
 			margin-right: 1%;
 			max-width: 95%;
-			padding: 6em;
+			padding: 0em;
 			position: relative;
-			text-align: right;
+			text-align: left;
 			vertical-align: middle;
 			z-index: 1;
 		}
@@ -3498,24 +3498,21 @@ input, select, textarea {
 				display: inline-block;
 				vertical-align: middle;
 			}
-
 				#banner .content header h2 {
 					font-size: 2.5em;
 					margin: 0;
 				}
-
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
 				}
-
 			#banner .content .image {
 				border-radius: 100%;
 				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
+				height: 16em;
+				margin-left: 0em;
 				vertical-align: middle;
-				width: 18em;
+				width: 16em;
 			}
 
 				#banner .content .image img {
